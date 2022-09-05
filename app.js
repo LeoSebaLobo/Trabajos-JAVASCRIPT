@@ -10,8 +10,7 @@ let destinos = prompt(`Ingrese el numero de las ciudades de destino que quiere c
 function destinosOpcion(destinos) {
     if (destinos !=1 || destinos !=2 || destinos !=3 || destinos !=4 || destinos !=5){
         alert("DEBE INGRESAR UN VALOR DEL 1 al 5");
-        validar = false;
-    }
+        }
 }
 
 let suma = " "
