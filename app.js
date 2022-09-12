@@ -1,24 +1,24 @@
 
 
-let destinos = prompt(`Ingrese el numero de las ciudades de destino que quiere calcular e ingrese ESC al finalizar:
-1 - Mar Del Plata
-2 - Mendoza
-3 - Bariloche
-4 - Puerto Madryn
-5 - Tucuman`)
+let productos = prompt(`Ingrese el objeto que quiere comprar y tipee ESC al finalizar:
+1 - Auricular
+2 - Parlante
+3 - Accesorio
+4 - Fundas
+5 - Celular`)
 
-function destinosOpcion(destinos) {
-    if (destinos !=1 || destinos !=2 || destinos !=3 || destinos !=4 || destinos !=5){
+function productosOpcion(productos) {
+    if (productos !=1 || destinos !=2 || destinos !=3 || destinos !=4 || destinos !=5){
         alert("DEBE INGRESAR UN VALOR DEL 1 al 5");
         }
 }
 
 let suma = " "
-let totalViajes = 0
+let totalCompra = 0
 
-while (destinos != "ESC"){
+while (productos != "ESC"){
 
-switch (destinos){
+switch (productos){
     case "1":
         suma = 400;
     break;
@@ -35,19 +35,28 @@ switch (destinos){
         suma = 2200;
     break
     default :
+        suma = 0;
         destinosOpcion(destinos);
     break;
 }
 
 
 
-totalViajes += suma
+totalCompra += suma
 
-destinos = prompt(`Ingrese el numero de las ciudades de destino que quiere calcular e ingrese ESC al finalizar:
-1 - Mar Del Plata
-2 - Mendoza
-3 - Bariloche
-4 - Puerto Madryn
-5 - Tucuman`)
+productos = prompt(`Ingrese el objeto que quiere comprar y tipee ESC al finalizar:
+1 - Auricular
+2 - Parlantes
+3 - Accesorio
+4 - Fundas
+5 - Celular`)
 }
-alert(`El total de KMs de sus viajes desde Bs As es de ${totalViajes} KM`)
+alert(`El total de su compra es de ${totalCompra}$`)
+
+const carritoCompras = []
+
+carritoCompras.push("Auricular")
+carritoCompras.push("Parlante")
+carritoCompras.push("Accesorio")
+carritoCompras.push("Fundas")
+carritoCompras.push("Celular")
